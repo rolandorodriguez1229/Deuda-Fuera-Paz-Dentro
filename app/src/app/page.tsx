@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, Star, TrendingUp } from 'lucide-react';
+import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, TrendingUp } from 'lucide-react';
 import { blogPosts } from '@/lib/constants';
 
 export default function Home() {
