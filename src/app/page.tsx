@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, TrendingUp } from 'lucide-react';
 import { blogPosts } from '@/lib/constants';
+import { TestimonialsSection } from '@/components/ui/testimonials';
+import { CourseOfferSection } from '@/components/ui/course-offer';
+import { FAQSection } from '@/components/ui/faq-section';
 
 export default function Home() {
   return (
@@ -94,11 +97,22 @@ export default function Home() {
                 <Button asChild variant="link" className="p-0 h-auto self-start text-accent">
                   <Link href="/sobre-mi">Mi historia completa <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Si mi historia resuena contigo, déjame guiarte en tu transformación:
+                  </p>
+                  <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Link href="/producto">🚀 Ver Cómo Puedo Ayudarte</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </Card>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Lead Magnet */}
       <section className="py-16 bg-white">
@@ -108,11 +122,25 @@ export default function Home() {
           <p className="text-muted-foreground mt-4 mb-8 max-w-2xl mx-auto">
             Descarga nuestra herramienta exclusiva en Excel para organizar tus deudas, visualizar tu presupuesto y dar el primer paso hacia la claridad financiera.
           </p>
-          <div className="max-w-md mx-auto">
-             <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="/descarga-gratis">Descargar Herramienta Gratis</Link>
-            </Button>
+          
+          <div className="bg-accent/10 rounded-xl p-8 max-w-lg mx-auto mb-8">
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-accent" />
+                <span>Más de 2,000 descargas</span>
+              </div>
+              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold py-6">
+                <Link href="/descarga-gratis">📊 Descargar Herramienta Gratis</Link>
+              </Button>
+              <p className="text-xs text-muted-foreground">
+                ✅ Descarga inmediata • ✅ No spam • ✅ 100% gratis
+              </p>
+            </div>
           </div>
+          
+          <p className="text-sm text-muted-foreground">
+            Da el primer paso hacia tu libertad financiera hoy mismo
+          </p>
         </div>
       </section>
 
@@ -158,38 +186,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Showcase */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">El Curso Completo: "Deuda Fuera, Paz Dentro"</h2>
-              <p className="mb-6">
-                Todo lo que necesitas en un solo lugar. El curso te guía desde los fundamentos de la mentalidad financiera hasta estrategias avanzadas de pago de deudas e inversión. Es tu mapa completo hacia la prosperidad.
-              </p>
-              <div className="grid grid-cols-2 gap-4 text-sm mb-8">
-                <div className="flex items-center gap-2"><Scissors /> Estrategias de Deuda</div>
-                <div className="flex items-center gap-2"><BarChart /> Presupuesto Efectivo</div>
-                <div className="flex items-center gap-2"><CheckCircle /> Hábitos Sostenibles</div>
-                <div className="flex items-center gap-2"><TrendingUp /> Inversión para Principiantes</div>
-              </div>
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/producto">Ver Detalles del Curso</Link>
-              </Button>
-            </div>
-            <div>
-              <Image
-                src="https://placehold.co/600x400.png"
-                alt="Presentación del producto"
-                data-ai-hint="online course mockup"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Enhanced Course Offer Section */}
+      <CourseOfferSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
     </div>
   );
 }
