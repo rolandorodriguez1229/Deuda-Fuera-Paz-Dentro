@@ -3,29 +3,138 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, TrendingUp } from 'lucide-react';
+import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, TrendingUp, Star } from 'lucide-react';
 import { blogPosts } from '@/lib/constants';
 import { TestimonialsSection } from '@/components/ui/testimonials';
 import { BookOffersSection } from '@/components/ui/book-offers';
 import { FAQSection } from '@/components/ui/faq-section';
+import { BenefitsSection } from '@/components/ui/benefits-section';
+import { MethodExplanation } from '@/components/ui/method-explanation';
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4">
-            El Método Anti-Deuda que los Gurús no te Cuentan
-          </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Descubre el sistema IPD y aplica la estrategia correcta para tu situación real. Deja de seguir consejos genéricos y empieza un plan que te devuelva el control y la paz.
-          </p>
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/producto">Descubrir el Sistema</Link>
-          </Button>
+      {/* Hero Section - Magnético y Emocional */}
+      <section className="bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground relative overflow-hidden">
+        <div className="container mx-auto px-4 py-16 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Texto Principal */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-headline font-bold mb-6 leading-tight">
+                Libérate de tus Deudas sin Sacrificar tu Tranquilidad
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                El único sistema paso a paso que te libera de la ansiedad financiera mientras eliminas tus deudas de forma inteligente. <strong>Sin privarte de todo lo que te gusta.</strong>
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center justify-center lg:justify-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-accent" />
+                  <span className="text-lg">Método probado por cientos de personas</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-accent" />
+                  <span className="text-lg">Resultados desde el primer mes</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-accent" />
+                  <span className="text-lg">Sin presupuestos imposibles de seguir</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl font-bold py-6 px-8">
+                  <Link href="/producto">🔥 Comprar Ahora por $19</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg py-6 px-8">
+                  <Link href="/descarga-gratis">⬇️ Calculadora Gratis</Link>
+                </Button>
+              </div>
+              
+              <p className="text-sm opacity-75 mt-4">
+                ✅ Acceso inmediato • ✅ Garantía 30 días • ✅ +2,000 descargas
+              </p>
+            </div>
+
+            {/* Imagen del Libro */}
+            <div className="text-center">
+              <div className="relative inline-block">
+                <div className="absolute inset-0 bg-accent/20 rounded-lg blur-xl scale-110"></div>
+                <Image
+                  src="https://placehold.co/400x600.png"
+                  alt="Portada del libro Deuda Fuera, Paz Dentro"
+                  data-ai-hint="book cover with title and financial freedom theme"
+                  width={400}
+                  height={600}
+                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground rounded-full px-4 py-2 font-bold shadow-lg">
+                  ¡NUEVO!
+                </div>
+              </div>
+              
+              <div className="mt-6 flex items-center justify-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                ))}
+                <span className="ml-2 text-lg font-semibold">4.9/5 (127 reseñas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Decoración de fondo */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/5 to-transparent"></div>
+      </section>
+
+      {/* Elevator Pitch - Propuesta Única de Valor */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="grid md:grid-cols-4 gap-8 items-center">
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-primary">Quién Soy</h3>
+                <p className="text-sm text-muted-foreground">
+                  Rolando Rodríguez, alguien que estuvo ahogado en deudas y encontró la salida
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-primary">Qué Resuelvo</h3>
+                <p className="text-sm text-muted-foreground">
+                  Deudas que te quitan el sueño + ansiedad financiera constante
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-primary">Cómo es Diferente</h3>
+                <p className="text-sm text-muted-foreground">
+                  Método claro sin complicaciones que se adapta a TU situación real
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-primary">Tu Resultado</h3>
+                <p className="text-sm text-muted-foreground">
+                  Paz interior + estabilidad financiera sin sacrificar todo
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-12 bg-accent/5 rounded-xl p-8">
+              <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-4">
+                "No es otro libro de finanzas. Es el sistema que me devolvió la tranquilidad."
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Después de probar todos los métodos tradicionales sin éxito, desarrollé un enfoque que realmente funciona para personas con vidas reales y presupuestos apretados.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Benefits Section */}
+      <BenefitsSection />
+
+      {/* Method Explanation */}
+      <MethodExplanation />
 
       {/* Problem/Solution Section */}
       <section className="py-16 bg-white">
