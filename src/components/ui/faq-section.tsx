@@ -8,36 +8,36 @@ import { HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo necesito dedicarle a la semana?",
-    answer: "El curso está diseñado para personas ocupadas. Con solo 2-3 horas por semana puedes completar las lecciones y aplicar las estrategias. Muchos estudiantes ven resultados desde la primera semana de implementación."
+    question: "¿En qué se diferencia este libro de otros libros de finanzas?",
+    answer: "A diferencia de otros libros que solo describen métodos genéricos, 'Deuda Fuera, Paz Dentro' te entrega un sistema de diagnóstico único (el IPD) para que apliques la estrategia correcta (Oxígeno, Nieve o Avalancha) en el momento correcto. No es teoría, es un plan de acción personalizado."
   },
   {
-    question: "¿Qué pasa si mi situación financiera es muy complicada?",
-    answer: "He trabajado con personas en todas las situaciones: desde deudas de $5,000 hasta más de $100,000. El sistema se adapta a tu situación específica. Además, tienes acceso a sesiones de Q&A donde puedo ayudarte personalmente con tu caso."
+    question: "¿Veré resultados si mis ingresos son bajos?",
+    answer: "¡Sí! El sistema está diseñado precisamente para realidades con flujo de efectivo limitado. La primera fase, 'Oxígeno Rápido', se enfoca 100% en liberar dinero mensual para que puedas respirar, sin importar cuánto ganes."
   },
   {
-    question: "¿Necesito conocimientos previos de finanzas?",
-    answer: "Para nada. El curso está diseñado para principiantes completos. Empezamos desde cero y te explico todo en términos simples. Si sabes sumar y restar, tienes todo lo que necesitas para empezar."
+    question: "¿Qué necesito para usar la Plantilla Interactiva del Paquete Completo?",
+    answer: "Solo necesitas acceso a Excel o Google Sheets (gratuito). La plantilla está diseñada para ser súper fácil de usar: solo ingresas tus números y ella hace todos los cálculos por ti."
+  },
+  {
+    question: "¿Cuánto tiempo necesito para implementar el sistema?",
+    answer: "El libro se lee en 2-3 horas, pero lo importante es la implementación. Con la Plantilla Interactiva, puedes tener tu diagnóstico IPD en 15 minutos y tu plan de acción el mismo día. La mayoría ve claridad inmediata."
+  },
+  {
+    question: "¿Funciona si tengo muchas deudas diferentes?",
+    answer: "Especialmente si tienes muchas deudas. El sistema IPD está diseñado para situaciones complejas. La plantilla organiza automáticamente todas tus deudas y te dice exactamente cuál atacar primero según tu nivel de presión financiera."
   },
   {
     question: "¿Hay garantía de devolución?",
-    answer: "Sí, tienes 30 días completos para probar el curso. Si no estás satisfecho por cualquier razón, te devuelvo el 100% de tu dinero, sin preguntas. Mi objetivo es tu éxito, no solo tu dinero."
+    answer: "Sí, tienes 30 días completos para probar el sistema. Si no estás satisfecho por cualquier razón, te devuelvo el 100% de tu dinero, sin preguntas. Mi objetivo es tu éxito, no solo tu dinero."
   },
   {
     question: "¿Funciona si vivo fuera de Estados Unidos?",
-    answer: "Absolutamente. Los principios financieros son universales. Tengo estudiantes en más de 15 países que han aplicado exitosamente el sistema. Las estrategias se adaptan a cualquier moneda y sistema bancario."
-  },
-  {
-    question: "¿Cuándo veré los primeros resultados?",
-    answer: "La mayoría de estudiantes reportan mayor claridad y control desde la primera semana. Los resultados financieros tangibles (como liberar flujo de efectivo) típicamente se ven entre el primer y segundo mes de implementación."
-  },
-  {
-    question: "¿Qué diferencia este curso de otros métodos?",
-    answer: "Este no es teoría de libros. Es un sistema que yo mismo usé para salir de deudas y que he refinado con cientos de estudiantes. Incluye herramientas específicas, plantillas probadas y acceso directo a mí para resolver tus dudas."
+    answer: "Absolutamente. Los principios del sistema IPD son universales. Tengo lectores en más de 15 países que han aplicado exitosamente el sistema. Las estrategias se adaptan a cualquier moneda y sistema bancario."
   },
   {
     question: "¿El precio incluye todo o hay costos adicionales?",
-    answer: "El precio incluye TODO: el curso completo, todas las plantillas, acceso a la comunidad, sesiones de Q&A y los bonos de lanzamiento. No hay costos ocultos ni upsells sorpresa."
+    answer: "El precio incluye TODO lo listado en cada paquete. No hay costos ocultos ni upsells sorpresa. Una vez que compras, tienes acceso de por vida a todo el contenido incluido."
   }
 ];
 

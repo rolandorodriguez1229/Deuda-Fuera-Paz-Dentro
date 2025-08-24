@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { ArrowRight, BarChart, CheckCircle, Lightbulb, Scissors, TrendingUp } from 'lucide-react';
 import { blogPosts } from '@/lib/constants';
 import { TestimonialsSection } from '@/components/ui/testimonials';
-import { CourseOfferSection } from '@/components/ui/course-offer';
+import { BookOffersSection } from '@/components/ui/book-offers';
 import { FAQSection } from '@/components/ui/faq-section';
 
 export default function Home() {
@@ -16,13 +16,13 @@ export default function Home() {
       <section className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-20 text-center">
           <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4">
-            Transforma tus Deudas en Libertad Financiera
+            El Método Anti-Deuda que los Gurús no te Cuentan
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Descubre el sistema paso a paso que te ayudará a salir de deudas, tomar el control de tu dinero y construir un futuro de paz y prosperidad.
+            Descubre el sistema IPD y aplica la estrategia correcta para tu situación real. Deja de seguir consejos genéricos y empieza un plan que te devuelva el control y la paz.
           </p>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/producto">Comienza tu Transformación</Link>
+            <Link href="/producto">Descubrir el Sistema</Link>
           </Button>
         </div>
       </section>
@@ -31,37 +31,41 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">¿Te sientes atrapado por las deudas?</h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              El estrés financiero puede ser abrumador. La falta de un plan claro te mantiene en un ciclo de pagos interminables sin ver progreso real.
+            <h2 className="text-3xl md:text-4xl font-headline font-bold">Has Intentado de Todo. ¿Por Qué Nada Funciona?</h2>
+            <p className="text-muted-foreground mt-4 max-w-4xl mx-auto text-lg">
+              Has leído sobre el Método Avalancha (atacar el interés más alto), pero te deja sin aire para respirar cada mes. Has probado la Bola de Nieve (la deuda más pequeña), pero sientes que las deudas grandes con intereses altos te siguen comiendo vivo. La verdad es que no existe 'un método mejor'. <strong>Existe el método correcto PARA TU MOMENTO.</strong> La mayoría de los planes fallan porque no se adaptan a tu nivel real de presión financiera.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              <h3 className="text-2xl font-headline font-bold text-primary">La Solución: Un Sistema Probado</h3>
-              <p>
-                "Deuda Fuera, Paz Dentro" no es una solución mágica, es un método estratégico que te empodera. Te enseñamos a entender tu situación, crear un plan de ataque y desarrollar hábitos financieros que durarán toda la vida.
+              <h3 className="text-2xl font-headline font-bold text-primary">La Solución: Un Diagnóstico, No una Opinión</h3>
+              <p className="text-lg">
+                Mi libro "Deuda Fuera, Paz Dentro" no te da un consejo, <strong>te da un GPS Anti-Deuda.</strong> Usando el sistema IPD, primero calculas tu "Nivel de Oxígeno Financiero". Ese número te dirá con una claridad brutal si tu misión ahora es:
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 shrink-0" />
-                  <span><strong className="font-bold">Claridad Total:</strong> Visualiza tu camino para salir de deudas con herramientas simples y efectivas.</span>
+                  <span><strong className="font-bold">1. Liberar Flujo Urgente</strong> (Oxígeno Rápido)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 shrink-0" />
-                  <span><strong className="font-bold">Control Absoluto:</strong> Aprende a presupuestar, ahorrar y tomar decisiones financieras inteligentes sin sacrificar tu calidad de vida.</span>
+                  <span><strong className="font-bold">2. Ganar Motivación</strong> (Método Nieve)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-accent mr-3 mt-1 shrink-0" />
-                  <span><strong className="font-bold">Paz Mental:</strong> Reemplaza la ansiedad con confianza, sabiendo que cada paso te acerca a tu libertad financiera.</span>
+                  <span><strong className="font-bold">3. Atacar Intereses con Eficiencia</strong> (Método Avalancha)</span>
                 </li>
               </ul>
+              <div className="bg-accent/10 rounded-lg p-4 mt-6">
+                <p className="text-sm font-semibold text-accent">💡 El Sistema IPD (Índice de Presión de Deuda)</p>
+                <p className="text-sm mt-2">No más adivinanzas. Tu situación financiera te dice exactamente qué estrategia usar.</p>
+              </div>
             </div>
             <div>
               <Image
                 src="https://placehold.co/600x400.png"
-                alt="Diagrama de solución financiera"
-                data-ai-hint="financial freedom chart"
+                alt="Sistema IPD - Diagnóstico Financiero"
+                data-ai-hint="financial diagnostic system flowchart"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
@@ -118,9 +122,9 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <Lightbulb className="h-12 w-12 text-accent mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Empieza con tu Diagnóstico Financiero Gratuito</h2>
-          <p className="text-muted-foreground mt-4 mb-8 max-w-2xl mx-auto">
-            Descarga nuestra herramienta exclusiva en Excel para organizar tus deudas, visualizar tu presupuesto y dar el primer paso hacia la claridad financiera.
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">Recibe la Herramienta #1 de mi Sistema: Tu Diagnóstico 360° GRATIS</h2>
+          <p className="text-muted-foreground mt-4 mb-8 max-w-3xl mx-auto text-lg">
+            Descarga la plantilla que es el corazón de mi libro. En menos de 15 minutos, tendrás tu <strong>IPD (Índice de Presión de Deuda)</strong> y sabrás con certeza cuál es tu primer paso para salir del hoyo.
           </p>
           
           <div className="bg-accent/10 rounded-xl p-8 max-w-lg mx-auto mb-8">
@@ -129,8 +133,16 @@ export default function Home() {
                 <CheckCircle className="h-4 w-4 text-accent" />
                 <span>Más de 2,000 descargas</span>
               </div>
+              <div className="bg-primary/10 rounded-lg p-3 mb-4">
+                <p className="text-sm font-semibold text-primary">🎯 Incluye:</p>
+                <ul className="text-xs text-left mt-2 space-y-1">
+                  <li>• Calculadora automática de IPD</li>
+                  <li>• Análisis de tu "Oxígeno Financiero"</li>
+                  <li>• Recomendación de estrategia personalizada</li>
+                </ul>
+              </div>
               <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold py-6">
-                <Link href="/descarga-gratis">📊 Descargar Herramienta Gratis</Link>
+                <Link href="/descarga-gratis">🔥 Calcular mi Oxígeno Financiero</Link>
               </Button>
               <p className="text-xs text-muted-foreground">
                 ✅ Descarga inmediata • ✅ No spam • ✅ 100% gratis
@@ -139,7 +151,7 @@ export default function Home() {
           </div>
           
           <p className="text-sm text-muted-foreground">
-            Da el primer paso hacia tu libertad financiera hoy mismo
+            Descubre tu estrategia personalizada en menos de 15 minutos
           </p>
         </div>
       </section>
@@ -186,8 +198,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Enhanced Course Offer Section */}
-      <CourseOfferSection />
+      {/* Book Offers Section */}
+      <BookOffersSection />
 
       {/* FAQ Section */}
       <FAQSection />
