@@ -1,0 +1,17 @@
+
+> nextn@0.1.0 dev
+> next dev --turbopack -p 9002
+
+   ▲ Next.js 15.3.3 (Turbopack)
+   - Local:        http://localhost:9002
+   - Network:      http://192.168.86.44:9002
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 2.3s
+ GET / 200 in 2833ms
+ ⚠ Cross origin request detected from 192.168.86.44 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /favicon.ico in 390ms
+ GET /favicon.ico?favicon.56766c03.ico 200 in 652ms
