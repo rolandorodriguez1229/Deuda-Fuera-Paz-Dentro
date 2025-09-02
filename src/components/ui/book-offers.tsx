@@ -96,7 +96,7 @@ export function BookOffersSection() {
                     {offer.originalPrice && (
                       <p className="text-sm text-muted-foreground line-through">{offer.originalPrice}</p>
                     )}
-                    <p className="text-4xl font-bold text-primary">{offer.price}</p>
+                    <p className="text-4xl font-bold text-foreground">{offer.price}</p>
                     {offer.originalPrice && (
                       <p className="text-sm text-green-600 font-semibold">¡Ahorras $60.01!</p>
                     )}

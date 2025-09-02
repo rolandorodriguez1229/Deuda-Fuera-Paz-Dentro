@@ -150,9 +150,9 @@ export function BenefitsSection() {
               <a href="/producto" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors">
                 Quiero mi plan anti-deuda — $7.99
               </a>
-              <button className="border border-primary text-primary hover:bg-primary/5 px-8 py-4 rounded-lg font-semibold transition-colors">
+              <a href="/descarga-gratis" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-lg font-semibold transition-colors border border-primary/10">
                 📊 Calculadora Gratis
-              </button>
+              </a>
             </div>
             <p className="text-xs text-muted-foreground mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
           </div>

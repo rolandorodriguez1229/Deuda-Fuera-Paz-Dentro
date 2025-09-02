@@ -46,7 +46,7 @@ export default function Home() {
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl font-bold py-6 px-8">
                   <Link href="/producto">Quiero mi plan anti-deuda ahora</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg py-6 px-8">
+                <Button asChild variant="default" size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg py-6 px-8">
                   <Link href="/descarga-gratis">⬇️ Calculadora Gratis</Link>
                 </Button>
               </div>
