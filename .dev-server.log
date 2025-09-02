@@ -31,3 +31,15 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
  GET /favicon.ico?favicon.56766c03.ico 200 in 244ms
  GET / 200 in 1418ms
  GET /favicon.ico?favicon.56766c03.ico 200 in 294ms
+ ✓ Compiled in 418ms
+ ✓ Compiled in 128ms
+ ✓ Compiled in 207ms
+ ✓ Compiled in 140ms
+ ✓ Compiled in 166ms
+ ✓ Compiled in 274ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 117ms
+ ✓ Compiled in 75ms
+ ✓ Compiled / in 88ms
+ GET / 200 in 1003ms
+ GET /favicon.ico?favicon.56766c03.ico 200 in 230ms

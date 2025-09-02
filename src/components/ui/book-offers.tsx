@@ -9,7 +9,7 @@ const bookOffers = [
     id: 'ebook',
     title: 'El Libro Digital',
     subtitle: '(Arranque Rápido)',
-    price: '$19',
+    price: '$7.99',
     originalPrice: null,
     description: 'Recibe acceso inmediato al eBook "Deuda Fuera, Paz Dentro" y aprende el sistema completo paso a paso en cualquier dispositivo.',
     features: [
@@ -98,7 +98,7 @@ export function BookOffersSection() {
                     )}
                     <p className="text-4xl font-bold text-primary">{offer.price}</p>
                     {offer.originalPrice && (
-                      <p className="text-sm text-green-600 font-semibold">¡Ahorras $19!</p>
+                      <p className="text-sm text-green-600 font-semibold">¡Ahorras $60.01!</p>
                     )}
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export function BookOffersSection() {
               <h3 className="text-lg font-semibold">Garantía de Satisfacción</h3>
             </div>
             <p className="text-sm opacity-90">
-              Tienes 30 días completos para probar el sistema. Si no estás satisfecho, te devuelvo el 100% de tu dinero, sin preguntas.
+              Tienes 30 días para probar el sistema. Si no estás satisfecho, te devuelvo el 100%.
             </p>
           </div>
         </div>

@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "¿Hay garantía de devolución?",
-    answer: "Sí, tienes 30 días completos para probar el sistema. Si no estás satisfecho por cualquier razón, te devuelvo el 100% de tu dinero, sin preguntas. Mi objetivo es tu éxito, no solo tu dinero."
+    answer: "Sí, tienes 30 días completos para probar el sistema. Si no estás satisfecho por cualquier razón, te devuelvo el 100% de tu dinero."
   },
   {
     question: "¿Funciona si vivo fuera de Estados Unidos?",

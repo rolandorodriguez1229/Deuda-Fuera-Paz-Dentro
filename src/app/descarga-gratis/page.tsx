@@ -39,10 +39,10 @@ export default function LeadCapturePage() {
         {/* Right Column: Form */}
         <div className="bg-card p-8 rounded-lg shadow-xl">
           <h1 className="text-3xl font-headline font-bold text-center mb-2">
-            Descarga Tu Herramienta Gratuita
+            Descarga Gratis la Plantilla IPD
           </h1>
           <p className="text-center text-muted-foreground mb-6">
-            Recibe acceso inmediato a la plantilla de Excel que te ayudará a tomar el control.
+            Da el primer paso de tu plan anti-deuda: diagnostica tu situación en 15 minutos y conoce tu siguiente movimiento.
           </p>
           <form className="space-y-4">
             <div>
@@ -59,8 +59,13 @@ export default function LeadCapturePage() {
             </Button>
           </form>
           <p className="text-xs text-muted-foreground text-center mt-4">
-            Respetamos tu privacidad. No compartiremos tu información.
+            Respetamos tu privacidad. No compartiremos tu información. Sin spam.
           </p>
+          <div className="text-center mt-6">
+            <a href="/producto" className="text-accent font-semibold hover:text-accent/80">
+              ¿Listo para el plan completo? Consíguelo por solo $7.99 →
+            </a>
+          </div>
         </div>
       </div>
     </div>

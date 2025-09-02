@@ -44,7 +44,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl font-bold py-6 px-8">
-                  <Link href="/producto">Quiero mi paz financiera</Link>
+                  <Link href="/producto">Quiero mi plan anti-deuda ahora</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg py-6 px-8">
                   <Link href="/descarga-gratis">⬇️ Calculadora Gratis</Link>
@@ -52,7 +52,7 @@ export default function Home() {
               </div>
 
               <p className="text-sm opacity-75 mt-4">
-                Pago seguro con Stripe · Acceso inmediato · Garantía 30 días
+                Solo $7.99 · Pago seguro con Stripe · Acceso inmediato · Garantía 30 días
               </p>
             </div>
 
@@ -231,9 +231,9 @@ export default function Home() {
                     Si mi historia resuena contigo, déjame guiarte en tu transformación:
                   </p>
                   <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href="/producto">Quiero mi paz financiera</Link>
+                    <Link href="/producto">Quiero mi plan anti-deuda ahora</Link>
                   </Button>
-                  <p className="text-xs text-muted-foreground mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
+                  <p className="text-xs text-muted-foreground mt-3">Solo $7.99 · Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
                 </div>
               </div>
             </div>
@@ -337,10 +337,10 @@ export default function Home() {
           <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">Acceso inmediato al sistema paso a paso.</p>
           <div className="flex justify-center">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-              <Link href="/producto">Quiero mi paz financiera</Link>
+              <Link href="/producto">Quiero mi plan anti-deuda ahora</Link>
             </Button>
           </div>
-          <p className="text-sm mt-4">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
+          <p className="text-sm mt-4">Solo $7.99 · Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
         </div>
       </section>
     </div>

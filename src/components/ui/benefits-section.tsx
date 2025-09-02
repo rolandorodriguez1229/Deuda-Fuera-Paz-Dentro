@@ -148,7 +148,7 @@ export function BenefitsSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/producto" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors">
-                Quiero mi paz financiera — $19
+                Quiero mi plan anti-deuda — $7.99
               </a>
               <button className="border border-primary text-primary hover:bg-primary/5 px-8 py-4 rounded-lg font-semibold transition-colors">
                 📊 Calculadora Gratis

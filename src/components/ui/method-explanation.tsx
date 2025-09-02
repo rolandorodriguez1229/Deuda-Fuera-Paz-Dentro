@@ -134,7 +134,7 @@ export function MethodExplanation() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors">
-                🚀 Empezar Ahora - $19
+                🚀 Empezar Ahora - $7.99
               </button>
               <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold transition-colors">
                 📋 Ver Muestra Gratis
