@@ -16,20 +16,31 @@ export default function SalesPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground text-center py-20 px-4">
-        <p className="text-accent font-headline">EL LIBRO</p>
-        <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">¿Tus deudas te quitan el sueño?</h1>
-        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          Descubre el sistema real que me sacó de <span className="font-bold">$90,000</span> en deudas y puede salvarte a ti. No necesitas ganar más dinero, necesitas un plan que funcione con tu realidad.
-        </p>
-        <p className="text-base md:text-lg mb-6 max-w-2xl mx-auto opacity-90">
-          No necesitas ganar más dinero. Solo necesitas un plan que funcione con tu realidad.
-        </p>
-        <div className="flex flex-col items-center gap-4">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-            <a href="#precio">Quiero mi plan anti-deuda ahora</a>
-          </Button>
-          <p className="text-sm">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
+      <section className="bg-primary text-primary-foreground py-20 px-4">
+        <div className="container mx-auto grid lg:grid-cols-2 gap-10 items-center">
+          <div className="text-center lg:text-left">
+            <p className="text-accent font-headline">EL LIBRO</p>
+            <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">¿Tus deudas no te dejan dormir? Descubre el sistema real que me sacó de $90,000 en deudas y puede salvarte a ti.</h1>
+            <p className="text-lg md:text-xl mb-8 opacity-90">
+              No necesitas ganar más dinero ni fórmulas complicadas. Necesitas un plan que funcione con tu realidad. Este libro te lo da.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
+                <a href="#precio">Quiero mi plan anti-deuda ahora</a>
+              </Button>
+            </div>
+            <p className="text-sm mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 7 días</p>
+          </div>
+          <div className="text-center">
+            <Image
+              src="https://placehold.co/500x700.png"
+              alt="Portada del libro Deuda Fuera, Paz Dentro"
+              data-ai-hint="book cover 3D mockup"
+              width={500}
+              height={700}
+              className="mx-auto rounded-lg shadow-2xl"
+            />
+          </div>
         </div>
       </section>
 
@@ -37,8 +48,13 @@ export default function SalesPage() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <p className="text-lg md:text-xl leading-relaxed">
-            Durante años despertaba con ansiedad, ahogado en <strong>$90,000</strong> de deudas entre tarjetas, autos y préstamos. Pagaba casi <strong>$4,000</strong> al mes y apenas bajaba el saldo. Hasta que creé un sistema que liberó mi flujo y me devolvió la paz. Hoy lo comparto contigo en este libro.
+            "Durante años viví atrapado en un ciclo que parecía no tener salida. Llegué a acumular casi <strong>$90,000</strong> en deudas entre autos, préstamos y tarjetas de crédito. Solo en pagos mínimos se me iban más de <strong>$3,900</strong> al mes… y aun así la deuda apenas bajaba.
+            Me acostaba con ansiedad, pensando qué pasaría si surgía un gasto inesperado. Trabajaba duro, pero todo parecía destinado a los bancos.
+            Probé métodos como la bola de nieve y la avalancha, pero en situaciones extremas no me funcionaban. Fue entonces cuando diseñé mi propio sistema.
+            Un plan que combina lo mejor de cada estrategia, con un enfoque claro: liberar flujo de efectivo rápido y <strong>recuperar la paz mental</strong>.
+            Ese plan me permitió salir adelante. Y hoy está en tus manos."
           </p>
+          <p className="mt-4 text-primary font-semibold">Si yo pude, tú también puedes. La deuda no se paga solo con dinero, se paga con estrategia.</p>
           <div className="mt-4">
             <Button asChild variant="link" className="p-0 h-auto text-accent">
               <a href="#precio">Empieza hoy mismo</a>
@@ -52,12 +68,12 @@ export default function SalesPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-headline font-bold text-center mb-6">¿Te sientes atrapado en un ciclo de deudas sin fin?</h2>
           <ul className="grid md:grid-cols-2 gap-4">
-            <li className="bg-muted/30 rounded-lg p-4">Pagas mes tras mes y la deuda no baja.</li>
-            <li className="bg-muted/30 rounded-lg p-4">Vives con miedo a un gasto inesperado.</li>
-            <li className="bg-muted/30 rounded-lg p-4">Te sientes culpable por no poder ahorrar.</li>
-            <li className="bg-muted/30 rounded-lg p-4">Las fórmulas de internet no funcionan en tu caso.</li>
+            <li className="bg-muted/30 rounded-lg p-4">Pagas mes tras mes y el saldo apenas baja.</li>
+            <li className="bg-muted/30 rounded-lg p-4">Sientes que trabajas solo para los bancos.</li>
+            <li className="bg-muted/30 rounded-lg p-4">La ansiedad no te deja dormir tranquilo.</li>
+            <li className="bg-muted/30 rounded-lg p-4">Los consejos típicos no funcionan en tu caso real.</li>
           </ul>
-          <p className="text-center text-muted-foreground mt-6">No estás solo. El sistema está diseñado para que caigas en deuda. Con el plan correcto, puedes salir.</p>
+          <p className="text-center text-muted-foreground mt-6">No es tu culpa. El sistema está diseñado para que caigas en deuda. Pero con un plan correcto, puedes salir.</p>
         </div>
       </section>
 
@@ -71,7 +87,7 @@ export default function SalesPage() {
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Beneficios / Transformación */}
       <section className="py-16">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -85,18 +101,27 @@ export default function SalesPage() {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-headline font-bold text-primary mb-4">La estrategia Deuda Fuera, Paz Dentro</h2>
-            <p className="mb-6">Este no es un libro de teoría. Es un <strong>GPS anti-deuda</strong> basado en la vida real, con pasos claros y comprobados para salir de deudas y recuperar la tranquilidad.</p>
-            <h3 className="font-headline font-semibold mb-2">Beneficios que vas a sentir</h3>
+            <h2 className="text-3xl font-headline font-bold text-primary mb-4">Lo que vas a lograr con Deuda Fuera, Paz Dentro</h2>
             <ul className="space-y-3">
-              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Descubre qué deuda pagar primero con el Selector IPD para no equivocarte.</span></li>
-              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Libera flujo en semanas, no en años, con el Método Oxígeno.</span></li>
-              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Usa Nieve o Avalancha en el momento exacto que te conviene para pagar más rápido sin ahogarte.</span></li>
-              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Recupera tu paz mental y duerme sin ansiedad por las cuentas.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span><strong>Libera flujo en semanas, no en años:</strong> descubre qué deuda atacar primero con el Selector de Estrategia IPD.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span><strong>Respira tranquilo cada noche:</strong> aplica el Método Oxígeno Rápido y siente alivio inmediato aunque tengas varias tarjetas encima.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span><strong>Recupera el control de tu dinero:</strong> deja de pagar mínimos eternos y redirige tu dinero hacia lo que importa.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span><strong>Deja de improvisar:</strong> tendrás un GPS financiero que te dice paso a paso qué hacer en cada etapa.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span><strong>Convierte la deuda en motivación:</strong> pasa de sentirte ahogado a ver cómo cada pago te acerca a tu libertad.</span></li>
             </ul>
+            <div className="my-8 text-center">
+              <Image
+                src="https://placehold.co/700x450.png"
+                alt="Mockup 3D del libro"
+                data-ai-hint="centered 3D book mockup"
+                width={700}
+                height={450}
+                className="mx-auto rounded-lg shadow-2xl"
+              />
+            </div>
             <div className="mt-6">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <a href="#precio">Sí, quiero mi plan ahora</a>
+                <a href="#precio">Quiero mi plan ahora</a>
               </Button>
               <p className="text-xs text-muted-foreground mt-2">Pago seguro con Stripe · Acceso inmediato</p>
             </div>
@@ -150,28 +175,23 @@ export default function SalesPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Prueba social inicial */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-headline font-bold text-center mb-12">Lo que dicen nuestros alumnos</h2>
+          <h2 className="text-3xl font-headline font-bold text-center mb-12">Historias que demuestran que funciona</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <div key={i} className="bg-background p-6 rounded-lg text-center">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  data-ai-hint={testimonial.imageHint}
-                  width={80}
-                  height={80}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <p className="italic">"{testimonial.text}"</p>
-                <div className="flex justify-center mt-4">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="text-accent fill-accent h-5 w-5" />)}
-                </div>
-                <p className="font-bold mt-4">- {testimonial.name}</p>
-              </div>
-            ))}
+            <div className="bg-background p-6 rounded-lg">
+              <p className="font-semibold mb-2">Juan y Ana, padres de dos hijos</p>
+              <p className="text-sm text-muted-foreground">Liberaron <strong>$500</strong> de flujo en 30 días aplicando el Método Oxígeno.</p>
+            </div>
+            <div className="bg-background p-6 rounded-lg">
+              <p className="font-semibold mb-2">María, madre soltera</p>
+              <p className="text-sm text-muted-foreground">Bajó su pago mensual en <strong>$320</strong> en 2 meses usando la estrategia de Bola de Nieve.</p>
+            </div>
+            <div className="bg-background p-6 rounded-lg">
+              <p className="font-semibold mb-2">Carlos</p>
+              <p className="text-sm text-muted-foreground">Redujo <strong>$2,000</strong> en intereses con la estrategia de transferencia 0% APR (cap. 11).</p>
+            </div>
           </div>
         </div>
       </section>
@@ -209,15 +229,15 @@ export default function SalesPage() {
       <section id="precio" className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 max-w-3xl text-center">
             <ShieldCheck className="h-16 w-16 text-accent mx-auto mb-4" />
-            <h2 className="text-3xl font-headline font-bold mb-4">Oferta de lanzamiento</h2>
-            <p className="mb-6">Llévate el libro digital hoy por solo <strong>$7.99</strong>. Precio subirá pronto. Sin trucos ni pagos ocultos. Acceso inmediato.</p>
+            <h2 className="text-3xl font-headline font-bold mb-4">Oferta de lanzamiento: solo $7.99</h2>
+            <p className="mb-6">Un solo pago, acceso inmediato. Sin letra pequeña.</p>
             <div className="bg-white text-foreground p-8 rounded-lg shadow-xl inline-block">
                 <h3 className="text-2xl font-headline font-bold text-primary">Libro + Recursos</h3>
                 <p className="text-5xl font-bold my-4 text-primary">$7.99 <span className="text-lg font-normal text-muted-foreground">pago único</span></p>
                 <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-                    <a href="#">Quiero empezar mi plan anti-deuda ahora</a>
+                    <a href="#">Descargar mi plan anti-deuda ahora</a>
                 </Button>
-                <p className="text-sm text-muted-foreground mt-4">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
+                <p className="text-sm text-muted-foreground mt-4">Pago seguro con Stripe · Acceso inmediato · Garantía 7 días</p>
             </div>
         </div>
       </section>
@@ -225,30 +245,39 @@ export default function SalesPage() {
       {/* Bonus Plantilla IPD */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-2xl font-headline font-bold mb-3">Bonus: Plantilla IPD</h2>
-          <p className="text-muted-foreground mb-6">Incluye plantilla en Excel/Google Sheets para calcular tu IPD y saber cuál estrategia aplicar primero.</p>
+          <h2 className="text-2xl font-headline font-bold mb-3">Incluye GRATIS la plantilla de diagnóstico IPD</h2>
+          <p className="text-muted-foreground mb-6">En menos de 15 minutos sabrás qué deuda atacar primero y tendrás un plan inicial para actuar hoy mismo.</p>
         </div>
       </section>
 
       {/* Cierre persuasivo */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-3xl font-headline font-bold mb-6">Tienes dos opciones hoy</h2>
+          <h2 className="text-3xl font-headline font-bold mb-6">Hoy tienes dos opciones</h2>
           <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-muted/30 rounded-xl p-6">
               <h3 className="font-semibold mb-2">Opción 1</h3>
-              <p className="text-muted-foreground">Seguir pagando mínimos, esperando a que la deuda baje sola.</p>
+              <p className="text-muted-foreground">Seguir pagando mínimos, dejar que los intereses te roben cada mes y seguir sintiéndote atrapado.</p>
             </div>
             <div className="bg-muted/30 rounded-xl p-6">
               <h3 className="font-semibold mb-2">Opción 2</h3>
-              <p className="text-muted-foreground">Tomar acción con un plan probado y recuperar tu paz financiera.</p>
+              <p className="text-muted-foreground">Tomar acción con un plan probado, liberar tu flujo y recuperar la paz que mereces.</p>
             </div>
           </div>
+          <p className="text-muted-foreground mt-6">Cada día que pasa sin actuar, los bancos ganan y tú pierdes. Da el primer paso hoy.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-              <a href="#precio">Descargar ahora mi plan anti-deuda</a>
+              <a href="#precio">Sí, quiero empezar mi plan anti-deuda ahora</a>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Footer simple */}
+      <section className="py-8 bg-secondary">
+        <div className="container mx-auto px-4 text-center text-secondary-foreground text-sm">
+          <p className="mb-1">Garantía clara: 7 días de devolución si no ves claridad ni pasos prácticos.</p>
+          <p className="opacity-80">© {new Date().getFullYear()} Deuda Fuera, Paz Dentro · contacto@deudafuerapazdentro.com</p>
         </div>
       </section>
     </div>
