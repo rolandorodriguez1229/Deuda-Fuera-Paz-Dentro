@@ -21,10 +21,10 @@ export default function Home() {
             {/* Texto Principal */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-headline font-bold mb-6 leading-tight">
-                Libérate de tus Deudas sin Sacrificar tu Tranquilidad
+                ¿Tus deudas te quitan el sueño?
               </h1>
               <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                El único sistema paso a paso que te libera de la ansiedad financiera mientras eliminas tus deudas de forma inteligente. <strong>Sin privarte de todo lo que te gusta.</strong>
+                Descubre el sistema real que me sacó de <strong>$90,000</strong> en deudas y puede salvarte a ti. No necesitas ganar más dinero, <strong>necesitas un plan que funcione con tu realidad</strong>.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -52,7 +52,7 @@ export default function Home() {
               </div>
 
               <p className="text-sm opacity-75 mt-4">
-                Solo $7.99 · Pago seguro con Stripe · Acceso inmediato · Garantía 30 días
+                Solo $7.99 · Oferta de lanzamiento (precio subirá pronto) · Pago seguro con Stripe · Acceso inmediato · Garantía 30 días
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg md:text-xl leading-relaxed">
-              Llegué a deber <strong>$90,000</strong>, pagando <strong>$3,900</strong> al mes solo en mínimos. Creé este sistema para recuperar mi paz, y ahora está en este libro.
+              Llegué a deber <strong>$90,000</strong>, pagando <strong>$3,900</strong> al mes solo en mínimos. Había noches en las que me despertaba a las 3 a.m. con el corazón acelerado, temiendo abrir el estado de cuenta. Creé este sistema para recuperar mi paz, y ahora está en este libro.
             </p>
             <div className="mt-4">
               <Button asChild variant="link" className="p-0 h-auto text-accent">

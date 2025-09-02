@@ -18,9 +18,9 @@ export default function SalesPage() {
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground text-center py-20 px-4">
         <p className="text-accent font-headline">EL LIBRO</p>
-        <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">Libérate de tus deudas sin fórmulas complicadas</h1>
+        <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">¿Tus deudas te quitan el sueño?</h1>
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          Descubre el sistema real que me sacó de <span className="font-bold">$90,000</span> en deudas y puede salvarte a ti.
+          Descubre el sistema real que me sacó de <span className="font-bold">$90,000</span> en deudas y puede salvarte a ti. No necesitas ganar más dinero, necesitas un plan que funcione con tu realidad.
         </p>
         <p className="text-base md:text-lg mb-6 max-w-2xl mx-auto opacity-90">
           No necesitas ganar más dinero. Solo necesitas un plan que funcione con tu realidad.
@@ -89,12 +89,11 @@ export default function SalesPage() {
             <p className="mb-6">Este no es un libro de teoría. Es un <strong>GPS anti-deuda</strong> basado en la vida real, con pasos claros y comprobados para salir de deudas y recuperar la tranquilidad.</p>
             <h3 className="font-headline font-semibold mb-2">Beneficios que vas a sentir</h3>
             <ul className="space-y-3">
-              {features.map((feature, i) => (
-                <li key={i} className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" />
-                  <span>{feature}</span>
-                </li>
-              ))}
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Descubre qué deuda pagar primero con el Selector IPD para no equivocarte.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Libera flujo en semanas, no en años, con el Método Oxígeno.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Usa Nieve o Avalancha en el momento exacto que te conviene para pagar más rápido sin ahogarte.</span></li>
+              <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Recupera tu paz mental y duerme sin ansiedad por las cuentas.</span></li>
+            </ul>
             </ul>
             <div className="mt-6">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -135,6 +134,20 @@ export default function SalesPage() {
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-2xl font-headline font-bold mb-3">No soy gurú, estuve en tu lugar</h2>
           <p className="text-muted-foreground">Este sistema nació cuando yo mismo estaba al borde. Lo probé primero en mi vida, luego lo compartí y hoy está ayudando a más personas.</p>
+          <div className="mt-6 grid md:grid-cols-3 gap-4 text-left">
+            <div className="bg-muted/30 rounded-lg p-4">
+              <p className="text-sm font-semibold">Familia con hijos</p>
+              <p className="text-sm text-muted-foreground">Liberó <strong>$500</strong> de flujo en 30 días aplicando Oxígeno Rápido.</p>
+            </div>
+            <div className="bg-muted/30 rounded-lg p-4">
+              <p className="text-sm font-semibold">Profesional con 3 tarjetas</p>
+              <p className="text-sm text-muted-foreground">Eliminó 2 tarjetas en 8 meses usando Nieve y luego Avalancha.</p>
+            </div>
+            <div className="bg-muted/30 rounded-lg p-4">
+              <p className="text-sm font-semibold">Emprendedora</p>
+              <p className="text-sm text-muted-foreground">Creó fondo de emergencia mientras salía de deudas con el plan paso a paso.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -198,7 +211,7 @@ export default function SalesPage() {
         <div className="container mx-auto px-4 max-w-3xl text-center">
             <ShieldCheck className="h-16 w-16 text-accent mx-auto mb-4" />
             <h2 className="text-3xl font-headline font-bold mb-4">Oferta de lanzamiento</h2>
-            <p className="mb-6">Llévate el libro digital hoy por solo <strong>$7.99</strong>. Sin trucos ni pagos ocultos. Acceso inmediato.</p>
+            <p className="mb-6">Llévate el libro digital hoy por solo <strong>$7.99</strong>. Precio subirá pronto. Sin trucos ni pagos ocultos. Acceso inmediato.</p>
             <div className="bg-white text-foreground p-8 rounded-lg shadow-xl inline-block">
                 <h3 className="text-2xl font-headline font-bold text-primary">Libro + Recursos</h3>
                 <p className="text-5xl font-bold my-4 text-primary">$7.99 <span className="text-lg font-normal text-muted-foreground">pago único</span></p>
