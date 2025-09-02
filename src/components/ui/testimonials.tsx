@@ -7,21 +7,21 @@ import Link from 'next/link';
 const testimonials = [
   {
     name: "María González",
-    role: "Madre de familia",
+    role: "Madre de familia · Guadalajara",
     image: "https://placehold.co/80x80.png",
     testimonial: "Gracias al sistema de Rolando, por fin entendí por dónde empezar. En 3 meses liberé $450 de flujo mensual y recuperé la paz.",
     result: "$450 liberados mensualmente"
   },
   {
     name: "Carlos Mendoza",
-    role: "Ingeniero",
+    role: "Ingeniero · Monterrey",
     image: "https://placehold.co/80x80.png",
     testimonial: "Llevaba años pagando solo los mínimos. Con este método, eliminé 2 tarjetas de crédito en 8 meses. ¡Increíble!",
     result: "2 tarjetas eliminadas"
   },
   {
     name: "Ana Rodríguez",
-    role: "Emprendedora",
+    role: "Emprendedora · Ciudad de México",
     image: "https://placehold.co/80x80.png",
     testimonial: "No solo salí de deudas, sino que ahora tengo un fondo de emergencia. El cambio de mentalidad fue clave.",
     result: "Fondo de emergencia creado"

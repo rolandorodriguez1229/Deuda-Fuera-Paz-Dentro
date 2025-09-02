@@ -6,26 +6,26 @@ import { testimonials } from '@/lib/constants';
 
 export default function SalesPage() {
   const features = [
-    'Módulo 1: Mentalidad y Fundamentos Financieros',
-    'Módulo 2: Creando tu Presupuesto Anti-Fallas',
-    'Módulo 3: Estrategias de Ataque de Deuda (Bola de Nieve y Avalancha)',
-    'Módulo 4: Aumentando tus Ingresos y Ahorros',
-    'Módulo 5: Introducción a la Inversión para un Futuro Sólido',
-    'Bonus: Plantillas, Herramientas y Comunidad Privada',
+    'Diagnóstico 360° (IPD) en 15 minutos',
+    'Método Oxígeno para liberar flujo de efectivo rápido',
+    'GPS Anti-Deuda: te dice qué estrategia usar y cuándo',
+    'Plan paso a paso, sin tecnicismos',
+    'Plantillas y recursos incluidos',
   ];
 
   return (
     <div>
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground text-center py-20 px-4">
-        <p className="text-accent font-headline">EL CURSO COMPLETO</p>
-        <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">Deuda Fuera, Paz Dentro: El Mapa Definitivo</h1>
+        <p className="text-accent font-headline">EL LIBRO</p>
+        <h1 className="text-4xl md:text-6xl font-headline font-bold mt-2 mb-4">Deuda Fuera, Paz Dentro: Tu Sistema Paso a Paso</h1>
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          El único curso que necesitarás para eliminar tus deudas, construir riqueza y finalmente dormir tranquilo por las noches.
+          El método práctico para liberarte de deudas sin sacrificar tu tranquilidad. Diagnostica, elige la estrategia correcta y actúa con claridad.
         </p>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-          <a href="#precio">Inscríbete Ahora y Cambia tu Futuro</a>
+          <a href="#precio">Quiero mi paz financiera</a>
         </Button>
+        <p className="text-sm mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
       </section>
 
       {/* Problem Section */}
@@ -53,8 +53,8 @@ export default function SalesPage() {
           </div>
           <div>
             <h2 className="text-3xl font-headline font-bold text-primary mb-4">Te Presento tu Plan de Escape</h2>
-            <p className="mb-6">El curso "Deuda Fuera, Paz Dentro" es un sistema paso a paso diseñado para darte el conocimiento, las herramientas y la confianza para tomar el control total de tu dinero. No es teoría aburrida; es acción pura y resultados tangibles.</p>
-            <h3 className="font-headline font-semibold mb-2">¿Qué hay dentro del curso?</h3>
+            <p className="mb-6">El libro "Deuda Fuera, Paz Dentro" te guía con un sistema paso a paso para tomar el control total de tu dinero. Sin tecnicismos, con claridad y resultados tangibles.</p>
+            <h3 className="font-headline font-semibold mb-2">¿Qué incluye?</h3>
             <ul className="space-y-3">
               {features.map((feature, i) => (
                 <li key={i} className="flex items-start">
@@ -63,6 +63,12 @@ export default function SalesPage() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <a href="#precio">Quiero mi paz financiera</a>
+              </Button>
+              <p className="text-xs text-muted-foreground mt-2">Pago seguro con Stripe · Acceso inmediato</p>
+            </div>
           </div>
         </div>
       </section>
@@ -98,6 +104,10 @@ export default function SalesPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl font-headline font-bold text-center mb-12">Preguntas Frecuentes</h2>
           <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-0">
+              <AccordionTrigger>¿Cómo recibo el libro después de comprar?</AccordionTrigger>
+              <AccordionContent>Al completar el pago seguro con Stripe, tendrás acceso inmediato a tu área privada con usuario y contraseña para descargar el libro y recursos.</AccordionContent>
+            </AccordionItem>
             <AccordionItem value="item-1">
               <AccordionTrigger>¿Necesito conocimientos previos de finanzas?</AccordionTrigger>
               <AccordionContent>Absolutamente no. El curso está diseñado para principiantes, explicando cada concepto desde cero de una manera simple y fácil de entender.</AccordionContent>
@@ -125,12 +135,12 @@ export default function SalesPage() {
             <h2 className="text-3xl font-headline font-bold mb-4">Tu Inversión está 100% Segura</h2>
             <p className="mb-6">Prueba el curso completo durante 30 días. Si no sientes que te ha dado la claridad y las herramientas para transformar tu vida financiera, te devolvemos cada centavo. Sin resentimientos.</p>
             <div className="bg-white text-foreground p-8 rounded-lg shadow-xl inline-block">
-                <h3 className="text-2xl font-headline font-bold text-primary">Acceso Completo e Inmediato</h3>
-                <p className="text-5xl font-bold my-4 text-primary">$197 <span className="text-lg font-normal text-muted-foreground">pago único</span></p>
+                <h3 className="text-2xl font-headline font-bold text-primary">Libro + Recursos</h3>
+                <p className="text-5xl font-bold my-4 text-primary">$19 <span className="text-lg font-normal text-muted-foreground">pago único</span></p>
                 <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-                    <a href="#">Quiero mi Libertad Financiera</a>
+                    <a href="#">Quiero mi paz financiera</a>
                 </Button>
-                <p className="text-sm text-muted-foreground mt-4">Acceso de por vida. Compra segura.</p>
+                <p className="text-sm text-muted-foreground mt-4">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
             </div>
         </div>
       </section>

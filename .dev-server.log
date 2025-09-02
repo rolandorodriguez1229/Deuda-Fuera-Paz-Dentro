@@ -15,3 +15,19 @@
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
  ✓ Compiled /favicon.ico in 390ms
  GET /favicon.ico?favicon.56766c03.ico 200 in 652ms
+ GET / 200 in 1067ms
+ ✓ Compiled in 969ms
+ ✓ Compiled / in 123ms
+ GET / 200 in 919ms
+ ✓ Compiled in 221ms
+ ✓ Compiled / in 58ms
+ GET / 200 in 391ms
+ ✓ Compiled in 175ms
+ ✓ Compiled / in 115ms
+ GET / 200 in 400ms
+ ✓ Compiled / in 32ms
+ GET / 200 in 385ms
+ GET / 200 in 638ms
+ GET /favicon.ico?favicon.56766c03.ico 200 in 244ms
+ GET / 200 in 1418ms
+ GET /favicon.ico?favicon.56766c03.ico 200 in 294ms

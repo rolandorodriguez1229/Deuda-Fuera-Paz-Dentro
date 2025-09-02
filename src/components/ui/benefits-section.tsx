@@ -119,6 +119,24 @@ export function BenefitsSection() {
           </div>
         </div>
 
+        {/* Bullets del sistema (IPD, Oxígeno, GPS) */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <ul className="grid md:grid-cols-3 gap-4">
+            <li className="bg-white rounded-xl p-5 border">
+              <p className="font-semibold mb-1">✅ Diagnóstico 360° en 15 min</p>
+              <p className="text-sm text-muted-foreground">Calcula tu IPD y conoce tu primer paso.</p>
+            </li>
+            <li className="bg-white rounded-xl p-5 border">
+              <p className="font-semibold mb-1">✅ Método Oxígeno</p>
+              <p className="text-sm text-muted-foreground">Libera flujo sin sacrificar tu vida.</p>
+            </li>
+            <li className="bg-white rounded-xl p-5 border">
+              <p className="font-semibold mb-1">✅ GPS Anti-Deuda</p>
+              <p className="text-sm text-muted-foreground">Te indica qué estrategia usar y cuándo.</p>
+            </li>
+          </ul>
+        </div>
+
         {/* CTA Intermedio */}
         <div className="text-center mt-16">
           <div className="bg-primary/5 rounded-2xl p-8 max-w-2xl mx-auto border">
@@ -129,13 +147,14 @@ export function BenefitsSection() {
               Miles de personas ya han transformado su relación con el dinero. Es tu turno.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors">
-                📖 Comprar el Libro - $19
-              </button>
+              <a href="/producto" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors">
+                Quiero mi paz financiera — $19
+              </a>
               <button className="border border-primary text-primary hover:bg-primary/5 px-8 py-4 rounded-lg font-semibold transition-colors">
                 📊 Calculadora Gratis
               </button>
             </div>
+            <p className="text-xs text-muted-foreground mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
           </div>
         </div>
       </div>

@@ -12,6 +12,10 @@ const faqs = [
     answer: "A diferencia de otros libros que solo describen métodos genéricos, 'Deuda Fuera, Paz Dentro' te entrega un sistema de diagnóstico único (el IPD) para que apliques la estrategia correcta (Oxígeno, Nieve o Avalancha) en el momento correcto. No es teoría, es un plan de acción personalizado."
   },
   {
+    question: "¿Cómo recibo el libro después de comprar?",
+    answer: "Al completar el pago seguro con Stripe, recibirás acceso inmediato a tu área privada con usuario y contraseña. Desde ahí podrás descargar el libro y los recursos incluidos."
+  },
+  {
     question: "¿Veré resultados si mis ingresos son bajos?",
     answer: "¡Sí! El sistema está diseñado precisamente para realidades con flujo de efectivo limitado. La primera fase, 'Oxígeno Rápido', se enfoca 100% en liberar dinero mensual para que puedas respirar, sin importar cuánto ganes."
   },

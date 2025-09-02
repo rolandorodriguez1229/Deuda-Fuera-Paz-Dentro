@@ -44,15 +44,15 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl font-bold py-6 px-8">
-                  <Link href="/producto">🔥 Comprar Ahora por $19</Link>
+                  <Link href="/producto">Quiero mi paz financiera</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg py-6 px-8">
                   <Link href="/descarga-gratis">⬇️ Calculadora Gratis</Link>
                 </Button>
               </div>
-              
+
               <p className="text-sm opacity-75 mt-4">
-                ✅ Acceso inmediato • ✅ Garantía 30 días • ✅ +2,000 descargas
+                Pago seguro con Stripe · Acceso inmediato · Garantía 30 días
               </p>
             </div>
 
@@ -85,6 +85,22 @@ export default function Home() {
         
         {/* Decoración de fondo */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/5 to-transparent"></div>
+      </section>
+
+      {/* Storytelling breve */}
+      <section className="py-10 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg md:text-xl leading-relaxed">
+              Llegué a deber <strong>$90,000</strong>, pagando <strong>$3,900</strong> al mes solo en mínimos. Creé este sistema para recuperar mi paz, y ahora está en este libro.
+            </p>
+            <div className="mt-4">
+              <Button asChild variant="link" className="p-0 h-auto text-accent">
+                <Link href="/sobre-mi">Leer mi historia completa</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Elevator Pitch - Propuesta Única de Valor */}
@@ -215,8 +231,9 @@ export default function Home() {
                     Si mi historia resuena contigo, déjame guiarte en tu transformación:
                   </p>
                   <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href="/producto">🚀 Ver Cómo Puedo Ayudarte</Link>
+                    <Link href="/producto">Quiero mi paz financiera</Link>
                   </Button>
+                  <p className="text-xs text-muted-foreground mt-3">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
                 </div>
               </div>
             </div>
@@ -312,6 +329,20 @@ export default function Home() {
 
       {/* FAQ Section */}
       <FAQSection />
+
+      {/* CTA Final */}
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">¿Listo para tu paz financiera?</h2>
+          <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">Acceso inmediato al sistema paso a paso.</p>
+          <div className="flex justify-center">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
+              <Link href="/producto">Quiero mi paz financiera</Link>
+            </Button>
+          </div>
+          <p className="text-sm mt-4">Pago seguro con Stripe · Acceso inmediato · Garantía 30 días</p>
+        </div>
+      </section>
     </div>
   );
 }
