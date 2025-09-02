@@ -94,7 +94,6 @@ export default function SalesPage() {
               <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Usa Nieve o Avalancha en el momento exacto que te conviene para pagar más rápido sin ahogarte.</span></li>
               <li className="flex items-start"><CheckCircle className="h-5 w-5 text-accent mr-3 mt-1 shrink-0" /><span>Recupera tu paz mental y duerme sin ansiedad por las cuentas.</span></li>
             </ul>
-            </ul>
             <div className="mt-6">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                 <a href="#precio">Sí, quiero mi plan ahora</a>
