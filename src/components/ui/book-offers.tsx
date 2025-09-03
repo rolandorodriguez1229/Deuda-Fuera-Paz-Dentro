@@ -22,45 +22,6 @@ const bookOffers = [
     buttonText: 'Comprar el eBook',
     buttonClass: 'bg-primary text-primary-foreground hover:bg-primary/90',
     popular: false
-  },
-  {
-    id: 'complete',
-    title: 'El Paquete Completo',
-    subtitle: '(EL MÁS POPULAR)',
-    price: '$49',
-    originalPrice: '$68',
-    description: 'La combinación perfecta: El Libro Digital + la Plantilla Interactiva 360° que calcula tu IPD y ordena tus deudas automáticamente. Ahorra tiempo y elimina errores.',
-    features: [
-      'Todo lo del Libro Digital',
-      'Plantilla Interactiva 360° (Excel)',
-      'Calculadora automática de IPD',
-      'Análisis de Oxígeno Financiero',
-      'Ordenamiento automático de deudas',
-      'Plantillas de presupuesto',
-      'Soporte por email incluido'
-    ],
-    buttonText: 'Quiero el Paquete Completo',
-    buttonClass: 'bg-accent text-accent-foreground hover:bg-accent/90',
-    popular: true
-  },
-  {
-    id: 'future',
-    title: 'Curso en Video',
-    subtitle: '(Próximamente)',
-    price: 'Pronto',
-    originalPrice: null,
-    description: 'El sistema completo en video-lecciones paso a paso. Los compradores del Paquete Completo tendrán un descuento exclusivo.',
-    features: [
-      'Video-lecciones paso a paso',
-      'Casos de estudio reales',
-      'Sesiones de Q&A en vivo',
-      'Acceso a comunidad privada',
-      'Descuento exclusivo para compradores del Paquete'
-    ],
-    buttonText: 'Notificarme',
-    buttonClass: 'bg-muted text-muted-foreground cursor-not-allowed',
-    popular: false,
-    disabled: true
   }
 ];
 
@@ -77,7 +38,7 @@ export function BookOffersSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto place-items-center">
           {bookOffers.map((offer, index) => (
             <Card key={offer.id} className={`relative ${offer.popular ? 'ring-2 ring-accent scale-105' : ''} ${offer.disabled ? 'opacity-75' : ''}`}>
               {offer.popular && (
@@ -98,7 +59,7 @@ export function BookOffersSection() {
                     )}
                     <p className="text-4xl font-bold text-foreground">{offer.price}</p>
                     {offer.originalPrice && (
-                      <p className="text-sm text-green-600 font-semibold">¡Ahorras $60.01!</p>
+                      <p className="text-sm text-green-600 font-semibold">¡Ahorras $19!</p>
                     )}
                   </div>
                 </div>
