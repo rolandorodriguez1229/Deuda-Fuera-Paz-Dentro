@@ -21,10 +21,10 @@ export default function Home() {
             {/* Texto Principal */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-headline font-bold mb-6 leading-tight">
-                ¿Tus deudas te quitan el sueño?
+                Deuda Fuera, Paz Dentro
               </h1>
               <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-                Descubre el sistema real que me sacó de <strong>$90,000</strong> en deudas y puede salvarte a ti. No necesitas ganar más dinero, <strong>necesitas un plan que funcione con tu realidad</strong>.
+                El método probado para salir de deudas rápido, sin fórmulas complicadas ni sacrificios imposibles.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -46,9 +46,6 @@ export default function Home() {
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl font-bold py-6 px-8">
                   <Link href="/producto">Quiero mi plan anti-deuda ahora</Link>
                 </Button>
-                <Button asChild variant="default" size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg py-6 px-8">
-                  <Link href="/descarga-gratis">⬇️ Calculadora Gratis</Link>
-                </Button>
               </div>
 
               <p className="text-sm opacity-75 mt-4">
@@ -61,7 +58,7 @@ export default function Home() {
               <div className="relative inline-block">
                 <div className="absolute inset-0 bg-accent/20 rounded-lg blur-xl scale-110"></div>
                 <Image
-                  src="https://placehold.co/400x600.png"
+                  src="/images/Ebook%20Portada%203d.png"
                   alt="Portada del libro Deuda Fuera, Paz Dentro"
                   data-ai-hint="book cover with title and financial freedom theme"
                   width={400}
@@ -188,8 +185,8 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://placehold.co/600x400.png"
-                alt="Sistema IPD - Diagnóstico Financiero"
+                src="/images/ChatGPT%20Image%20Sep%202%2C%202025%20at%2009_37_33%20PM.png"
+                alt="GPS Anti-Deuda (Sistema IPD)"
                 data-ai-hint="financial diagnostic system flowchart"
                 width={600}
                 height={400}
@@ -207,7 +204,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3">
               <div className="md:col-span-1">
                  <Image
-                    src="https://placehold.co/400x500.png"
+                    src="/images/rolando.png"
                     alt="Rolando, creador de Deuda Fuera, Paz Dentro"
                     data-ai-hint="portrait author"
                     width={400}
@@ -244,85 +241,9 @@ export default function Home() {
       {/* Testimonials Section */}
       <TestimonialsSection />
 
-      {/* Lead Magnet */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <Lightbulb className="h-12 w-12 text-accent mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Recibe la Herramienta #1 de mi Sistema: Tu Diagnóstico 360° GRATIS</h2>
-          <p className="text-muted-foreground mt-4 mb-8 max-w-3xl mx-auto text-lg">
-            Descarga la plantilla que es el corazón de mi libro. En menos de 15 minutos, tendrás tu <strong>IPD (Índice de Presión de Deuda)</strong> y sabrás con certeza cuál es tu primer paso para salir del hoyo.
-          </p>
-          
-          <div className="bg-accent/10 rounded-xl p-8 max-w-lg mx-auto mb-8">
-            <div className="space-y-4">
-              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-accent" />
-                <span>Más de 2,000 descargas</span>
-              </div>
-              <div className="bg-primary/10 rounded-lg p-3 mb-4">
-                <p className="text-sm font-semibold text-primary">🎯 Incluye:</p>
-                <ul className="text-xs text-left mt-2 space-y-1">
-                  <li>• Calculadora automática de IPD</li>
-                  <li>• Análisis de tu "Oxígeno Financiero"</li>
-                  <li>• Recomendación de estrategia personalizada</li>
-                </ul>
-              </div>
-              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold py-6">
-                <Link href="/descarga-gratis">🔥 Calcular mi Oxígeno Financiero</Link>
-              </Button>
-              <p className="text-xs text-muted-foreground">
-                ✅ Descarga inmediata • ✅ No spam • ✅ 100% gratis
-              </p>
-            </div>
-          </div>
-          
-          <p className="text-sm text-muted-foreground">
-            Descubre tu estrategia personalizada en menos de 15 minutos
-          </p>
-        </div>
-      </section>
+      {/* Lead Magnet - removido para enfoque de venta directa */}
 
-      {/* Blog Excerpts */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Desde Nuestro Blog</h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Consejos, estrategias e inspiración para tu viaje hacia la libertad financiera.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {blogPosts.slice(0, 3).map((post) => (
-              <Card key={post.slug} className="flex flex-col">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  data-ai-hint={post.imageHint}
-                  width={400}
-                  height={250}
-                  className="rounded-t-lg object-cover"
-                />
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl">{post.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{post.excerpt}</p>
-                </CardContent>
-                <div className="p-6 pt-0">
-                  <Button asChild variant="link" className="p-0 h-auto text-accent">
-                    <Link href={`/blog/${post.slug}`}>Leer más <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild>
-              <Link href="/blog">Visitar el Blog</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Blog Excerpts - removido para enfoque de venta directa */}
 
       {/* Book Offers Section */}
       <BookOffersSection />

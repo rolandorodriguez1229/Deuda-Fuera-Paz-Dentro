@@ -31,7 +31,7 @@ export default function SalesPage() {
           </div>
           <div className="text-center">
             <Image
-              src="https://placehold.co/500x700.png"
+              src="/images/Ebook%20Portada%203d.png"
               alt="Portada del libro Deuda Fuera, Paz Dentro"
               data-ai-hint="book cover 3D mockup"
               width={500}
@@ -100,7 +100,7 @@ export default function SalesPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid md:grid-cols-3 gap-6 items-center">
             <div className="md:col-span-1 text-center">
-              <Image src="https://placehold.co/300x380.png" alt="Foto de Rolando" width={300} height={380} className="rounded-xl mx-auto shadow" />
+              <Image src="/images/rolando.png" alt="Foto de Rolando" width={300} height={380} className="rounded-xl mx-auto shadow" />
             </div>
             <div className="md:col-span-2">
               <h3 className="text-2xl font-headline font-bold text-primary mb-2">Yo también estuve ahí</h3>
